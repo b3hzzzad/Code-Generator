@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Set amount of numbers to generate"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <EditText
+            android:id="@+id/editTextMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Maximum Number ..."
+            android:inputType="number"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <EditText
+            android:id="@+id/editTextMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Minimum Number ..."
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonWithRepetition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate with repetition" />
+
+        <Button
+            android:id="@+id/buttonWithOutRepetition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate without repetition" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="clear"
+            android:id="@+id/buttonClear"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp" />
+    </LinearLayout>
+
+</ScrollView>
