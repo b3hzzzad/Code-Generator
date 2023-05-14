@@ -1,75 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="21"
+    android:background="#212F3D"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <Button
+        android:id="@+id/numButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_weight="1"
+        android:text="Numbers" />
 
-        <EditText
-            android:id="@+id/editTextRange"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="Set amount of numbers to generate"
-            android:inputType="number"
-            tools:layout_editor_absoluteX="20dp" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
 
-        <EditText
-            android:id="@+id/editTextMax"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="Maximum Number ..."
-            android:inputType="number"
-            tools:layout_editor_absoluteX="20dp" />
+    <Button
+        android:id="@+id/passButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Characters" />
 
-        <EditText
-            android:id="@+id/editTextMin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="Minimum Number ..."
-            android:inputType="number" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
 
-        <Button
-            android:id="@+id/buttonWithRepetition"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Generate with repetition" />
+    <Button
+        android:id="@+id/qrButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="QR Code" />
 
-        <Button
-            android:id="@+id/buttonWithOutRepetition"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Generate without repetition" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:text="clear"
-            android:id="@+id/buttonClear"
-            android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_gravity="center"
+        android:text="www.b3hzzzad.me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="15dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="15dp" />
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>

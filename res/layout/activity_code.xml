@@ -1,9 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="20dp"
     tools:context=".code">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Set amount of numbers to generate"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <EditText
+            android:id="@+id/editTextMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Maximum Number ..."
+            android:inputType="number"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <EditText
+            android:id="@+id/editTextMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Minimum Number ..."
+            android:inputType="number" />
+
+        <Button
+            android:background="#2ECC71"
+            android:id="@+id/buttonWithRepetition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate with repetition" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+        <Button
+            android:background="#2ECC71"
+            android:id="@+id/buttonWithOutRepetition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate without repetition" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+        <Button
+            android:background="#2ECC71"
+            android:id="@+id/buttonClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="clear" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Tap to Copy" />
+    </LinearLayout>
+</ScrollView>
