@@ -53,6 +53,17 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="3" />
+    <Button
+        android:id="@+id/morseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Morse Code" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
 
     <TextView
         android:layout_gravity="center"

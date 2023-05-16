@@ -52,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button morseButton = findViewById(R.id.morseButton);
+        morseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, morseCode.class);
+                startActivity(intent);
+            }
+        });
     }
 }
 
